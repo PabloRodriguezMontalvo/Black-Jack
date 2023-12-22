@@ -16,7 +16,6 @@ class Player:
         if amount>self.chips:
             print("No tienes suficientes fichas para apostar esa cantidad")
             return False
-
         self.chips-=amount
         print(f"Has apostado {amount} fichas")
         return True
@@ -37,6 +36,7 @@ class Player:
             aces -=1
 
         return total
+
     def print_player_hand(self, jugador):
         """Formatea y enseña la mano del jugador """
         array_cards=[f"{card[1]} de {card[0]}" for card in self.hand]
