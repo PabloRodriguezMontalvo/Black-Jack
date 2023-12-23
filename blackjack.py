@@ -17,7 +17,7 @@ def play_game():
         if player1.chips<=0:
             print("TE QUEDASTE SIN MONEDAS, FIN DEL JUEGO")
             break
-        play_again= input(Fore.WHITE+"¿Quieres jugar de nuevo?: [S/N]: ").lower()
+        play_again= input(Fore.WHITE+"¿Quieres jugar de nuevo?: [S/N]: ").lower()  # pragma: no cover
         if play_again== 'n':
             break
 

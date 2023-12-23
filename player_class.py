@@ -45,6 +45,7 @@ class Player:
             print(Fore.BLUE+ f"Mano: {hand_player}")
         else:
             print(Fore.RED+ f"Mano: {hand_player}")
+        return array_cards
 
 
     def win_bet(self, amount):
